@@ -17,6 +17,9 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
 
+    class Meta:
+        verbose_name = "User"
+
     def get_full_name(self):
         """Retrive Full Name Of User """
         return self.name
