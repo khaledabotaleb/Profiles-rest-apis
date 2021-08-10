@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'profiles_project.urls'
+AUTH_USER_MODEL = 'profiles_api.UserProfile'
 
 TEMPLATES = [
     {
